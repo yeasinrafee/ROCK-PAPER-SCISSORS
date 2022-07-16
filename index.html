@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROCK-PAPER-SCISSORS</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <title>RPS</title>
+  </head>
+  <body>
+    <div class="selections">
+      <button class="selection" data-selection="rock">✊</button>
+      <button class="selection" data-selection="paper">✋</button>
+      <button class="selection" data-selection="scissors">✌</button>
+    </div>
+    <div class="result">
+      <div>
+        You
+        <span class="score you" data-score-you>0</span>
+      </div>
+      <div data-select-you>
+        <span class="score comp" data-score-comp>0</span>
+        Computer
+      </div>
+    </div>
+    <div class="allResults">
+      <!-- <div class="selected-item winner">✊</div>
+        <div class="selected-item">✌</div> -->
+    </div>
+    <div class="resultText"></div>
+    <div data-restart-btn class="btn-restart">
+      <button data-btn class="btn">Restart</button>
+    </div>
+
+    <footer class="footer">
+      <p> Copyright © 2022 yeasinrafee </p>
+    </footer>
+  </body>
 </html>
